@@ -1,0 +1,13 @@
+update employees set emp_name='suraj' where emp_id=107
+
+
+select count(*) as total from employees
+
+
+select * from employees order by salary
+
+
+select distinct top 3 salary ,* from employees
+
+
+select * from employees where hire_date>'2002-04-02'
