@@ -1,0 +1,13 @@
+
+select * from department where dep_name='HR' order by dept_id
+
+select job_name,sum(salary)from employees group by job_name 
+
+
+select * from employees where salary >20000 and commission >500
+
+
+select * from employees where emp_name like 'v%' and commission is null
+
+
+select * from employees where emp_id in (select emp_id  from employees where salary > 20000) or hire_date>'2002-06-01'
