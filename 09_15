@@ -1,1 +1,17 @@
+select * from department d inner join employees e on d.dept_id=e.dept_id
+
+
+
+select * from department d left join employees e on d.dept_id=e.dept_id
+
+
+
+select * from department d right join employees e on d.dept_id=e.dept_id
+
+
+
+select * from department d full join employees e on d.dept_id=e.dept_id
+
+
+select * from department  cross join employees 
 
