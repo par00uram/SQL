@@ -1,3 +1,9 @@
 select dept_id, sum(salary) from employees group by dept_id
 
 select e.emp_name,e.job_name,d.dept_id from department d inner join employees e on d.dept_id=e.dept_id where d.dept_id>1001
+
+
+select * from employee where salary in (select max(salary) from employee)
+
+select * from employee as e left join client as c on e.emp_id =c.emp_id where salary > 20000;
+
