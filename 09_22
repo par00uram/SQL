@@ -1,0 +1,15 @@
+select * from employees where dept_id<>2001
+
+
+select * from employees where hire_date<('2002-01-01');
+
+
+
+select * from employees order by dept_id asc ,job_name desc
+
+
+
+select * from employees where job_name not in('president','manager') order by salary asc;
+
+
+select * from employees where job_name not in('president','manager') order by salary asc;
